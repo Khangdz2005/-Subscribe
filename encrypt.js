@@ -65,5 +65,12 @@ if (!encrypted) {
   process.exit(1);
 }
 
+// Avoid crashing when output is piped to a command
+// that closes early (e.g. `head -c 80`).
+process.stdout.on("error", (err) => {
+  if (err && err.code === "EPIPE") process.exit(0);
+  throw err;
+});
+
 process.stdout.write(String(encrypted));
 
