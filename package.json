@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "encrypt": "node ./encrypt.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khangdz2005/-Subscribe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khangdz2005/-Subscribe/issues"
+  },
+  "homepage": "https://github.com/Khangdz2005/-Subscribe#readme",
+  "dependencies": {
+    "jsencrypt": "^3.5.4"
+  }
+}
